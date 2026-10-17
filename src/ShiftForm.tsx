@@ -104,6 +104,19 @@ export default function ShiftForm({ onAddShift }: ShiftFormProps) {
             </label>
 
             <button type='submit'>Add Shift</button>
+
+            {/* <table>
+                <thead>Date</thead>
+                <tbody></tbody>
+                <thead>Date</thead>
+                <tbody></tbody>
+                <thead>Date</thead>
+                <tbody></tbody>
+                <thead>Date</thead>
+                <tbody></tbody>
+            </table> */}
         </form>
+
+        
     );
 }

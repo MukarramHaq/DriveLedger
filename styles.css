@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* 1rem = 16px (the browser default font size) */
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -8,7 +10,7 @@ body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
   margin: 0;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 h1{
@@ -16,33 +18,33 @@ h1{
 }
 
 .form-style {
-  max-width: 500px;
-  margin: 30px auto;
-  padding: 40px;
+  max-width: 31.25rem;
+  margin: 1.875rem auto;
+  padding: 2.5rem;
   background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  gap: 1.25rem;
+  box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .label-style {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   color: #2d3748;
   font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+  letter-spacing: 0.03rem;
 }
 
 .label-style input {
-  padding: 13px 16px;
+  padding: 0.8125rem 1rem;
   border: 2px solid #e2e8f0;
-  border-radius: 8px;
-  font-size: 15px;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
   background-color: #f7fafc;
   transition: all 0.3s ease;
   color: #2d3748;
@@ -52,8 +54,8 @@ h1{
   outline: none;
   background-color: white;
   border-color: #6366f1;
-  box-shadow: 0 0 12px rgba(99, 102, 241, 0.15);
-  transform: translateY(-2px);
+  box-shadow: 0 0 0.75rem rgba(99, 102, 241, 0.15);
+  transform: translateY(-0.125rem);
 }
 
 .label-style input::placeholder {
@@ -61,25 +63,86 @@ h1{
 }
 
 .form-style button {
-  padding: 14px 20px;
+  padding: 0.875rem 1.25rem;
   background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 15px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  margin-top: 0.9375rem;
+  letter-spacing: 0.03rem;
+  box-shadow: 0 0.25rem 0.9375rem rgba(99, 102, 241, 0.3);
 }
 
 .form-style button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.5rem 1.5625rem rgba(99, 102, 241, 0.4);
 }
 
 .form-style button:active {
-  transform: translateY(-1px);
+  transform: translateY(-0.0625rem);
+}
+
+/* ---------- Shift table ---------- */
+
+.table-card {
+  max-width: 56.25rem;
+  margin: 1.875rem auto;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  border-radius: 0.9375rem;
+  box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  overflow-x: auto; /* scroll sideways on small screens instead of squashing */
+}
+
+.shift-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  color: #2d3748;
+}
+
+.shift-table th,
+.shift-table td {
+  text-align: center;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.shift-table th {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  padding: 0.875rem 1rem;
+}
+
+.shift-table td {
+  padding: 0.8125rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.shift-table td:first-child {
+  font-weight: 500;
+}
+
+.shift-table tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.shift-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.shift-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.shift-table tbody tr:hover {
+  background-color: rgba(99, 102, 241, 0.08);
 }
